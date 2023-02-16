@@ -16,6 +16,7 @@ export const productValidationSchema = yup.object().shape({
     .required('form:error-quantity-required'),
   unit: yup.string().required('form:error-unit-required'),
   type: yup.object().nullable().required('form:error-type-required'),
+  preview_url: yup.string().nullable().required('form:error-remote-file-url-required'),
 
   // digital_file_input: yup.mixed().when('is_digital', (isDigital) => {
   //   if (isDigital) {
@@ -32,11 +33,13 @@ export const productValidationSchema = yup.object().shape({
 
   digital_file_input: yup
     .object()
-    .test(
-      'check-digital-file',
-      'form:error-digital-file-input-required',
-      (file) => file && file?.original
-    ),
+    .notRequired()
+    // .test(
+    //   'check-digital-file',
+    //   'form:error-digital-file-input-required',
+    //   (file) => file && file?.original
+    // )
+    ,
 
   status: yup.string().required('form:error-status-required'),
 });

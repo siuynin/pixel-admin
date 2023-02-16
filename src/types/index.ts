@@ -809,6 +809,7 @@ export interface SettingsOptions {
   freeShippingAmount?: number;
   currencyToWalletRatio?: number;
   signupPoints?: number;
+  signinPoints?: number;
   maximumQuestionLimit?: number;
   deliveryTime?: DeliveryTime[];
   logo?: Attachment;
@@ -955,6 +956,7 @@ export interface SettingsOptions {
   minimumOrderAmount?: number;
   currencyToWalletRatio?: number;
   signupPoints?: number;
+  signinPoints?: number;
   maximumQuestionLimit?: number;
   deliveryTime?: DeliveryTime[];
   logo?: Attachment;
@@ -978,6 +980,7 @@ export interface SettingsOptionsInput {
   freeShippingAmount?: number;
   currencyToWalletRatio?: number;
   signupPoints?: number;
+  signinPoints?: number;
   maximumQuestionLimit?: number;
   deliveryTime?: DeliveryTimeInput[];
   logo?: AttachmentInput;

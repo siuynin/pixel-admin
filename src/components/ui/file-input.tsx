@@ -2,7 +2,7 @@ import Uploader from '@/components/common/uploader';
 import { Controller } from 'react-hook-form';
 
 interface FileInputProps {
-  control: any;
+  control?: any;
   name: string;
   multiple?: boolean;
   acceptFile?: boolean;

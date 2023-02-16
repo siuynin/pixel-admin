@@ -47,6 +47,7 @@ type FormValues = {
   paymentGateway: any;
   taxClass: Tax;
   signupPoints: number;
+  signinPoints: number;
   maximumQuestionLimit: number;
   currencyToWalletRatio: number;
   contactDetails: ContactDetailsInput;
@@ -195,6 +196,7 @@ export default function SettingsForm({ settings, taxClasses }: IProps) {
       options: {
         ...values,
         signupPoints: Number(values.signupPoints),
+        signinPoints: Number(values.signinPoints),
         currencyToWalletRatio: Number(values.currencyToWalletRatio),
         minimumOrderAmount: Number(values.minimumOrderAmount),
         freeShippingAmount: Number(values.freeShippingAmount),
@@ -319,6 +321,16 @@ export default function SettingsForm({ settings, taxClasses }: IProps) {
             {...register('signupPoints')}
             type="number"
             error={t(errors.signupPoints?.message!)}
+            variant="outline"
+            className="mb-5"
+            disabled={isNotDefaultSettingsPage}
+          />
+
+          <Input
+            label={`${t('form:input-label-signin-points')}`}
+            {...register('signinPoints')}
+            type="number"
+            error={t(errors.signinPoints?.message!)}
             variant="outline"
             className="mb-5"
             disabled={isNotDefaultSettingsPage}
