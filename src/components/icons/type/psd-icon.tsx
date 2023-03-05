@@ -1,4 +1,4 @@
-export const FixedIcon: React.FC<React.SVGAttributes<{}>> = (props) => {
+export const PsdIcon: React.FC<React.SVGAttributes<{}>> = (props) => {
 	return (
 		<svg
 			viewBox="0 0 100 100"
