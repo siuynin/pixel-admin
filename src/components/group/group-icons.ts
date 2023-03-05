@@ -15,4 +15,8 @@ export const typeIconList = [
     value: 'NoTypeIcon',
     label: 'N/A',
   },
+  {
+    value: 'PsdIcon',
+    label: 'Photoshop',
+  },
 ];
