@@ -24,6 +24,7 @@ const nextConfig = {
       'pixarlaravel.s3.ap-southeast-1.amazonaws.com',
       'lh3.googleusercontent.com',
       'goodbeen.com',
+      'bapixel-cloud.oss-us-east-1.aliyuncs.com',
       'drive.google.com',
     ],
   },
