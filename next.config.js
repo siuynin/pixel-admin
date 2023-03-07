@@ -23,7 +23,7 @@ const nextConfig = {
       'picsum.photos',
       'pixarlaravel.s3.ap-southeast-1.amazonaws.com',
       'lh3.googleusercontent.com',
-      'bapixel-file.oss-us-east-1.aliyuncs.com',
+      'goodbeen.com',
       'drive.google.com',
     ],
   },
