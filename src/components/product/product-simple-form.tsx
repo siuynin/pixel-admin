@@ -82,13 +82,7 @@ export default function ProductSimpleForm({ initialValues }: IProps) {
           className="mb-5"
           disabled={isTranslateProduct}
         />
-        <Input
-          label={t("form:input-label-width")}
-          {...register("video")}
-          error={t(errors.width?.message!)}
-          variant="outline"
-          className="mb-5"
-        />
+        
 
         <Input
           label={`${t('form:input-label-preview-url')}`}
@@ -98,7 +92,16 @@ export default function ProductSimpleForm({ initialValues }: IProps) {
           className="mb-5"
         />
 
-        {/* <Input
+        {/* 
+        <Input
+          label={t("form:input-label-width")}
+          {...register("video")}
+          error={t(errors.width?.message!)}
+          variant="outline"
+          className="mb-5"
+        />
+        
+        <Input
           label={t("form:input-label-width")}
           {...register("width")}
           error={t(errors.width?.message!)}
